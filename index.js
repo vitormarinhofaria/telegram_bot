@@ -9,7 +9,7 @@ async function main(){
         return res.status(200)
     })
 
-    await app.listen("5050", () =>{
+    app.listen(process.env.PORT || "5050", () =>{
         console.log("listening on requests")
     })
 }
